@@ -1,0 +1,192 @@
+---
+title: "<span style='color: #0456B4'>Research Data Management</span>"
+author: "Jennifer K. Houchins"
+institute: "WestEd"
+from: markdown+emoji
+biblio-style: apalike
+bibliography: refs.bib
+format:
+  revealjs: 
+    transition-speed: slow
+    theme: simple
+    mouse-wheel: false
+    view-distance: 4
+    slide-number: c/t
+    html-q-tags: true
+    hash: true
+    hash-type: number
+    center-title-slide: true
+    logo: img/WestEd.png
+    footer: "<a href='https://jenniferkhouchins.com'>jenniferkhouchins.com</a>"
+---
+
+## Quarto {visibility="hidden"}
+
+Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+
+## Bullets {visibility="hidden"}
+
+When you click the **Render** button a document will be generated that includes:
+
+-   Content authored with markdown
+-   Output from executable code
+
+## Code {visibility="hidden"}
+
+When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+## {background-color="navy"}
+Jenn
+
+::: footer
+
+:::
+
+## Why Data Management?
+:::: {.columns}
+
+::: {.column width="60%"}
+<br>
+_The results of educational research studies are only as accurate as the data used to produce them._ 
+<br>
+<br>
+  _~ Aleata Hubbard Cheuoua_ [@hubbard_data_2017]
+:::
+
+::: {.column width="40%"}
+![](img/datamgmtbook.png){.absolute top=0 right=0 width="400px"}
+:::
+
+::::
+
+::: {.notes}
+The book Data Management in Large-Scale Education Research begins with this quote from my WestEd colleague Aleata Hubbard Cheuoua in the preamble. The results of educational research studies are only as accurate as the data used to produce them.
+:::
+
+## {transition="fade-in"}
+
+::: {style="align: center; margin-top: 50px; font-size: 2em; color: red;"}
+**_The results of educational research studies are only as accurate as the data used to produce them._** 
+:::
+
+::: {.notes}
+Let's pause just a moment to let that sink in. The results of educational research studies (that's the work we are all doing here) are ONLY AS ACCURATE as the data used to produce them.
+:::
+
+## We'll Discuss...
+:::: {columns}
+::: {.column width="50%"}
+- The Research Workflow
+- Data Best Practices
+ + :fire: Hot Tips :fire:
+- Handling Considerations
+- Useful Resources
+- More Learning Opportunities
+:::
+::: {.column width="50%"}
+![](img/data.png){.absolute top=0 right=0}
+:::
+::::
+
+## Establishing a Research Workflow
+:::: {.columns}
+
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+**Increases:**  :arrow_up: 
+
+- Study replication
+- Cumulative knowledge development
+- Teamwork
+- Ease of revision to a project/study
+- Higher impact research
+:::
+:::
+
+::: {.column width="50%"}
+::: {.fragment .fade-in}
+**Reduces:**  :arrow_down:
+
+- Effort duplication
+- Frustration
+- Communication Issues
+:::
+:::
+
+::::
+
+
+## Core Practices for Reproducible Research {visibility=hidden}
+:::: {.columns}
+::: {.column width="55%"}
+<img src="img/reprod_2.png" height="400px"/>
+:::
+
+::: {.column width="45%"}
+<br />
+“The **communication** aspect **should not be an afterthought**, 
+it should be recorded with your analysis as you are going through it.” 
+
+(Harrison et al, 2020)
+:::
+
+
+::::
+
+## The Point? {visibility=hidden}
+
+::: {style="align: center; margin-top: 50px; font-size: 1em;"}
+
+_...future you and anyone else will be able to <b>pick up your analysis and reproduce the same results</b>, including figures and tables._
+
+\~ Harrison, 2020
+:::
+ 
+## Is This You? {visibility=hidden}
+
+![](img/phdcomic.png)
+::: footer
+
+:::
+
+
+## Data Management Lifecycle
+
+
+
+## Best Practices and :fire: Hot Tips :fire:
+
+
+## Data Handling Considerations
+
+
+## Helpful Resources
+
+- [Data Management in Large-Scale Education Research](https://datamgmtinedresearch.com/
+https://datascienceineducation.com)
+- NCSU Data Framework
+
+
+
+## About this Presentation
+
+This presentation was created and delivered using:
+
+- R Studio
+ + Quarto Markdown
+ + Revealjs Presentation Format
+- GitHub Pages
+
+::: {.notes}
+
+Mermaid which is a JavaScript based diagramming and charting tool that renders Markdown-inspired text definitions to create and modify diagrams dynamically.
+:::
+
+## References
+
+::: {#refs}
+:::
+
