@@ -333,6 +333,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="index_files/libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="index_files/libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="index_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -344,6 +347,12 @@
   <p class="institute">WestEd</p>
 </section>
 
+<section class="slide level2">
+
+<div class="cell">
+
+</div>
+</section>
 
 
 
@@ -444,8 +453,47 @@
 
 
 <section class="slide level2">
-<h2>Data Management Lifecycle</h2>
+<h2>Test Diagram</h2>
+<div class="cell" data-reveal="true">
+<div class="cell-output-display">
+<div>
+<p>
+</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
+    A((Big Idea)) --&gt; B
+    
+subgraph B [Project Conception]
+   C(Proposal Writing) --&gt; D(Data Planning)
+end
+
+B --&gt; E
+
+subgraph E [Data Management Lifecycle]
+F[(Data Collection)] --&gt; G(Wrangle <br>and<br> Document)
+G --&gt; H{Analysis}
+H --&gt; F
+H -.-&gt; M[Data Sharing]
+end
+
+E --&gt; I 
+
+subgraph I [Project End]
+J[Data Archive] -.-&gt; |Re-use| K[Data Discovery]
+end
+
+K -.-&gt; Z((Next Big Idea))
+</pre>
+<div id="mermaid-tooltip-1" class="mermaidTooltip">
+
+</div>
+<p></p>
+</div>
+</div>
+</div>
 </section>
+<section class="slide level2">
+<h2>Data Management Lifecycle</h2>
+
+<img data-src="https://mermaid.ink/img/pako:eNpVkt1u4jAQhV_F8lWQApuQH2i0qgQkbVmWVdVeVCrhwnWG4FUYR47TNqW8-xpHAm1uMp45_s6R7SPlsgCa0F0lP_ieKU1-P-VIzDdznLkoybIANhiQ4fCWzPtBjk37VipW78mcbB6V_Atck4VEDrUWErdWtnDMpJYNq8iLElpg2UNSJ2WakceKIZ6bOQIWOeY4t-PsXF74GdlY9ZohK-EAaOKJHfCOV2Bs7jY9bCGrymQw3oOtpdw7L4phWQH5-aZ-3DIs7J-kkrdninG9t8KH4wxZ1TWiOeX4YFt3thiZat2bP5tjMUm3l6SZ1S3Jf1GX16PIsDDiX_3umeJ78Q7bHvn9BMO2gW-y6qepaLh8B9Vd6ate-eo4f-BTk-sdUJceQB2YKMx9HU9myVotnzvkNNGqBZe2dcE0pIKZSAea7FjVXLpZIbRUl2bNkCZH-kmToR-MR2EQxN6N5_tREIVjl3Y0CUbeZDqOvTgIo5somPjxyaVfUhqwPxoHfhj5k3gae2EUelOXguWv-9dkH5U1ebUbrOnpH0imxRs?type=png.png" class="r-stretch quarto-figure-center"></section>
 <section class="slide level2">
 <h2>Best Practices and <span class="emoji" data-emoji="fire">🔥</span> Hot Tips <span class="emoji" data-emoji="fire">🔥</span></h2>
 </section>

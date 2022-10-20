@@ -19,6 +19,9 @@ format:
     logo: img/WestEd.png
     footer: "<a href='https://jenniferkhouchins.com'>jenniferkhouchins.com</a>"
 ---
+```{r}
+# library(DiagrammeR)
+```
 
 ## Quarto {visibility="hidden"}
 
@@ -152,10 +155,37 @@ _...future you and anyone else will be able to <b>pick up your analysis and repr
 
 :::
 
+## Test Diagram
+
+```{mermaid}
+flowchart LR
+    A((Big Idea)) --> B
+    
+subgraph B [Project Conception]
+   C(Proposal Writing) --> D(Data Planning)
+end
+
+B --> E
+
+subgraph E [Data Management Lifecycle]
+F[(Data Collection)] --> G(Wrangle <br/>and<br/> Document)
+G --> H{Analysis}
+H --> F
+H -.-> M[Data Sharing]
+end
+
+E --> I 
+
+subgraph I [Project End]
+J[Data Archive] -.-> |Re-use| K[Data Discovery]
+end
+
+K -.-> Z((Next Big Idea))
+```
 
 ## Data Management Lifecycle
 
-
+[![](https://mermaid.ink/img/pako:eNpVkt1u4jAQhV_F8lWQApuQH2i0qgQkbVmWVdVeVCrhwnWG4FUYR47TNqW8-xpHAm1uMp45_s6R7SPlsgCa0F0lP_ieKU1-P-VIzDdznLkoybIANhiQ4fCWzPtBjk37VipW78mcbB6V_Atck4VEDrUWErdWtnDMpJYNq8iLElpg2UNSJ2WakceKIZ6bOQIWOeY4t-PsXF74GdlY9ZohK-EAaOKJHfCOV2Bs7jY9bCGrymQw3oOtpdw7L4phWQH5-aZ-3DIs7J-kkrdninG9t8KH4wxZ1TWiOeX4YFt3thiZat2bP5tjMUm3l6SZ1S3Jf1GX16PIsDDiX_3umeJ78Q7bHvn9BMO2gW-y6qepaLh8B9Vd6ate-eo4f-BTk-sdUJceQB2YKMx9HU9myVotnzvkNNGqBZe2dcE0pIKZSAea7FjVXLpZIbRUl2bNkCZH-kmToR-MR2EQxN6N5_tREIVjl3Y0CUbeZDqOvTgIo5somPjxyaVfUhqwPxoHfhj5k3gae2EUelOXguWv-9dkH5U1ebUbrOnpH0imxRs?type=png)](https://mermaid-js.github.io/mermaid-live-editor/edit#pako:eNpVkt1u4jAQhV_F8lWQApuQH2i0qgQkbVmWVdVeVCrhwnWG4FUYR47TNqW8-xpHAm1uMp45_s6R7SPlsgCa0F0lP_ieKU1-P-VIzDdznLkoybIANhiQ4fCWzPtBjk37VipW78mcbB6V_Atck4VEDrUWErdWtnDMpJYNq8iLElpg2UNSJ2WakceKIZ6bOQIWOeY4t-PsXF74GdlY9ZohK-EAaOKJHfCOV2Bs7jY9bCGrymQw3oOtpdw7L4phWQH5-aZ-3DIs7J-kkrdninG9t8KH4wxZ1TWiOeX4YFt3thiZat2bP5tjMUm3l6SZ1S3Jf1GX16PIsDDiX_3umeJ78Q7bHvn9BMO2gW-y6qepaLh8B9Vd6ate-eo4f-BTk-sdUJceQB2YKMx9HU9myVotnzvkNNGqBZe2dcE0pIKZSAea7FjVXLpZIbRUl2bNkCZH-kmToR-MR2EQxN6N5_tREIVjl3Y0CUbeZDqOvTgIo5somPjxyaVfUhqwPxoHfhj5k3gae2EUelOXguWv-9dkH5U1ebUbrOnpH0imxRs)
 
 ## Best Practices and :fire: Hot Tips :fire:
 
