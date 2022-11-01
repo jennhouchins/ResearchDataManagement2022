@@ -1,5 +1,5 @@
 ---
-title: "<span style='color: #0456B4'>Research Data Management</span>"
+title: "<span style='color: #0456B4;'>Avoid \"data derailment\" with effective data management strategies</span>"
 author: "Jennifer K. Houchins"
 institute: "WestEd"
 from: markdown+emoji
@@ -19,36 +19,11 @@ format:
     logo: img/WestEd.png
     footer: "<a href='https://jenniferkhouchins.com'>jenniferkhouchins.com</a>"
 ---
+
+## Why Data Management?
 ```{r}
 # library(DiagrammeR)
 ```
-
-## Quarto {visibility="hidden"}
-
-Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
-
-## Bullets {visibility="hidden"}
-
-When you click the **Render** button a document will be generated that includes:
-
--   Content authored with markdown
--   Output from executable code
-
-## Code {visibility="hidden"}
-
-When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
-
-```{r}
-1 + 1
-```
-## {background-color="navy"}
-Jenn
-
-::: footer
-
-:::
-
-## Why Data Management?
 :::: {.columns}
 
 ::: {.column width="60%"}
@@ -83,11 +58,10 @@ Let's pause just a moment to let that sink in. The results of educational resear
 :::: {columns}
 ::: {.column width="50%"}
 - The Research Workflow
-- Data Best Practices
- + :fire: Hot Tips :fire:
-- Handling Considerations
-- Useful Resources
-- More Learning Opportunities
+- Data Management's Role
+- Components of Data Management
+- Useful Resources <br/> and :fire: Hot Tips :fire:
+- Learn More
 :::
 ::: {.column width="50%"}
 ![](img/data.png){.absolute top=0 right=0}
@@ -103,9 +77,8 @@ Let's pause just a moment to let that sink in. The results of educational resear
 
 - Study replication
 - Cumulative knowledge development
-- Teamwork
 - Ease of revision to a project/study
-- Higher impact research
+- <span style='color: red;'>**Higher impact research**</span>
 :::
 :::
 
@@ -115,104 +88,281 @@ Let's pause just a moment to let that sink in. The results of educational resear
 
 - Effort duplication
 - Frustration
-- Communication Issues
+- Potential for error
 :::
 :::
 
 ::::
 
+## The Research Workflow
 
-## Core Practices for Reproducible Research {visibility=hidden}
-:::: {.columns}
-::: {.column width="55%"}
-<img src="img/reprod_2.png" height="400px"/>
+
+![](img/researchworkflow.png){.absolute top="90" left="20" width="100%"}
+
+
+::: {.fragment .fade-in-then-out}
+![](img/researchworkflow2.png){.absolute top="90" left="20" width="100%"}
 :::
 
-::: {.column width="45%"}
+::: {.fragment .fade-in-then-out}
+![](img/researchworkflow3.png){.absolute top="90" left="20" width="100%"}
+:::
+
+
+## What is research data management?
+
+It's the <span style='color: #0456B4;'>_**organization, storage, preservation, and dissemination of research study data**_</span> (i.e., the materials generated or collected throughout the research process). [@DataManagementLargeScale]
 <br />
-“The **communication** aspect **should not be an afterthought**, 
-it should be recorded with your analysis as you are going through it.” 
+<br />
+These can be:
 
-(Harrison et al, 2020)
+::::{.columns}
+:::{.column width=50%}
+- physical or digital files
+- documentation
+- artifacts 
 :::
-
-
+:::{.column width=50%}
+- audio or video recordings
+- researcher observations/field notes
+:::
 ::::
 
-## The Point? {visibility=hidden}
+## Major Components of Research Data Management
 
-::: {style="align: center; margin-top: 50px; font-size: 1em;"}
+- Documentation
+- Data Collection Process
+- Style Guides
+- Data Cleaning
+- Data Sharing
 
-_...future you and anyone else will be able to <b>pick up your analysis and reproduce the same results</b>, including figures and tables._
+## Documentation
 
-\~ Harrison, 2020
+<br>Data documentation (including a data management plan) <span style='color: red;'>_**is required by funders**_</span> (e.g., NSF and IES).
+<br>
+<br>
+This should include the <span style='color: #0456B4;'>_**who, what, where, when, and why**_</span> of your project's data management lifecycle.
+
+## Documentation - Who and What
+::::{.columns}
+:::{.column width=50%}
+<span style='color: #0456B4;'>**Who:**</span>
+
+- Who is collecting the data?
+- Who/What are the subjects under study?
 :::
- 
-## Is This You? {visibility=hidden}
+:::{.column width=50%}
+<span style='color: #0456B4;'>**What:**</span>
 
-![](img/phdcomic.png)
-::: footer
-
+- What data are collected? For what purpose
+- What do these data contain? How is it structured?
 :::
+::::
+## Documentation - Where and When
+::::{.columns}
+:::{.column width=50%}
+<span style='color: #0456B4;'>**Where:**</span>
 
-## Test Diagram
+- Where were these data collected?
+- What were the experimental conditions?
+:::
+:::{.column width=50%}
+<span style='color: #0456B4;'>**When:**</span>
 
-```{mermaid}
-flowchart LR
-    A((Big Idea)) --> B
-    
-subgraph B [Project Conception]
-   C(Proposal Writing) --> D(Data Planning)
-end
+- When were these data collected?
+- Is there a timeline for the collection?
+  
+:::
+::::
 
-B --> E
+## Documentation - Why
 
-subgraph E [Data Management Lifecycle]
-F[(Data Collection)] --> G(Wrangle <br/>and<br/> Document)
-G --> H{Analysis}
-H --> F
-H -.-> M[Data Sharing]
-end
+<span style='color: #0456B4;'>**Why:**</span>
 
-E --> I 
+- Why were these data collected?
+- How do these data relate to your research questions?
 
-subgraph I [Project End]
-J[Data Archive] -.-> |Re-use| K[Data Discovery]
-end
 
-K -.-> Z((Next Big Idea))
+## Data Collection {.smaller}
+
+You've planned... :white_check_mark:
+
+You've proposed... :white_check_mark:
+
+Your proposal was accepted... :white_check_mark:
+
+<br>
+<span style='color: red;'>**Before you do anything else**</span>, you have to get approval from the Institutional Review Board (IRB).
+
+<br>
+IRB:
+
+- is designated to review and monitor human participant research
+- ensures that the welfare, rights, and privacy of research participants are maintained throughout a project 
+
+## Risk Considersations for Data Collection {.smaller}
+
+<br>
+```{r}
+Classification <- c("<span style='color: green;'>**Not sensitive**</span>", 
+                    "<span style='color: #e6b400;'>**Moderately sensitive**</span>",
+                    "<span style='color: red;'>**Highly sensitive**</span>", 
+                    "<span style='color: purple;'>**Ultra-sensitive**</span>")
+Risk <- c("little to none", "moderate to low", "high risk", "very high risk")
+Example <- c("name, address, educational attainment level, field of study", 
+             "date of birth, race, gender, transcripts, and disability status or type", 
+             "driver's license, mother's maiden name, passport, or immigration number", 
+             "social security numbers, passwords, encryption keys, and biometrics such as fingerprints and iris scans")
+
+df <- data.frame(Classification, Risk, Example)
+
+knitr::kable(df, 
+             col.names = c("Classification", "Risk Level", "Data Examples"))
 ```
 
-## Data Management Lifecycle
 
-[![](https://mermaid.ink/img/pako:eNpVkt1u4jAQhV_F8lWQApuQH2i0qgQkbVmWVdVeVCrhwnWG4FUYR47TNqW8-xpHAm1uMp45_s6R7SPlsgCa0F0lP_ieKU1-P-VIzDdznLkoybIANhiQ4fCWzPtBjk37VipW78mcbB6V_Atck4VEDrUWErdWtnDMpJYNq8iLElpg2UNSJ2WakceKIZ6bOQIWOeY4t-PsXF74GdlY9ZohK-EAaOKJHfCOV2Bs7jY9bCGrymQw3oOtpdw7L4phWQH5-aZ-3DIs7J-kkrdninG9t8KH4wxZ1TWiOeX4YFt3thiZat2bP5tjMUm3l6SZ1S3Jf1GX16PIsDDiX_3umeJ78Q7bHvn9BMO2gW-y6qepaLh8B9Vd6ate-eo4f-BTk-sdUJceQB2YKMx9HU9myVotnzvkNNGqBZe2dcE0pIKZSAea7FjVXLpZIbRUl2bNkCZH-kmToR-MR2EQxN6N5_tREIVjl3Y0CUbeZDqOvTgIo5somPjxyaVfUhqwPxoHfhj5k3gae2EUelOXguWv-9dkH5U1ebUbrOnpH0imxRs?type=png)](https://mermaid-js.github.io/mermaid-live-editor/edit#pako:eNpVkt1u4jAQhV_F8lWQApuQH2i0qgQkbVmWVdVeVCrhwnWG4FUYR47TNqW8-xpHAm1uMp45_s6R7SPlsgCa0F0lP_ieKU1-P-VIzDdznLkoybIANhiQ4fCWzPtBjk37VipW78mcbB6V_Atck4VEDrUWErdWtnDMpJYNq8iLElpg2UNSJ2WakceKIZ6bOQIWOeY4t-PsXF74GdlY9ZohK-EAaOKJHfCOV2Bs7jY9bCGrymQw3oOtpdw7L4phWQH5-aZ-3DIs7J-kkrdninG9t8KH4wxZ1TWiOeX4YFt3thiZat2bP5tjMUm3l6SZ1S3Jf1GX16PIsDDiX_3umeJ78Q7bHvn9BMO2gW-y6qepaLh8B9Vd6ate-eo4f-BTk-sdUJceQB2YKMx9HU9myVotnzvkNNGqBZe2dcE0pIKZSAea7FjVXLpZIbRUl2bNkCZH-kmToR-MR2EQxN6N5_tREIVjl3Y0CUbeZDqOvTgIo5somPjxyaVfUhqwPxoHfhj5k3gae2EUelOXguWv-9dkH5U1ebUbrOnpH0imxRs)
+:::{.notes}
+The type of data you're collecting will determine what the level of risk is if the data is somehow exposed. NC State's Office of Information Technology classifies data with four levels.
 
-## Best Practices and :fire: Hot Tips :fire:
+These classification levels will determine how you can store your data. For example, red, highly sensitive data CANNOT be stored on regular Google Drive. You have to used a Google Shared Drive.
+:::
 
+## Style Guides
 
-## Data Handling Considerations
+- Set conventions that reduce chance for errors and ensure reproducibility
+- Includes standardization of file structures, file naming and versioning, variable naming, and value coding.
+- Clear and consistent structure help you always understand your own process!
 
+## Standard Structure
 
-## Helpful Resources
+:::{.fragment}
+![](img/project.png){.absolute top="70" left="20" width="100%"}
+:::
 
-- [Data Management in Large-Scale Education Research](https://datamgmtinedresearch.com/
+:::{.fragment .fade-in-then-out}
+![](img/project2.png){.absolute top="70" left="20" width="100%"}
+:::
+
+:::{.fragment .fade-in-then-out}
+![](img/project3.png){.absolute top="70" left="20" width="100%"}
+:::
+
+:::{.fragment .fade-in-then-out}
+![](img/project4.png){.absolute top="70" left="20" width="100%"}
+:::
+
+:::{.fragment .fade-in-then-out}
+![](img/project5.png){.absolute top="70" left="20" width="100%"}
+:::
+
+:::{.fragment .fade-in-then-out}
+![](img/project6.png){.absolute top="70" left="20" width="100%"}
+:::
+
+## Data Cleaning and Analysis
+::::{.columns}
+:::{.column width=50%}
+
+<span style='color: #0456B4;'>**Data cleaning**</span>
+
+1. Import raw data
+2. Wrangle
+3. Explore
+4. Export clean data file<br>(:heavy_exclamation_mark: don't overwrite :heavy_exclamation_mark:)
+:::
+
+:::{.column width=50%}
+<span style='color: #0456B4;'>**Analysis**</span>
+
+1. Import clean data
+2. Perform analyses
+3. Produce visualizations
+4. Export results and visualizations
+
+:::
+::::
+
+:::{.notes}
+Check structure (# of rows and cols)
+Check rows for duplicate participants or non-consented participants who need to be removed
+Compare against a roster (participant tracking)
+Check columns against data dictionary
+Any additional variables not in data dictionary?
+Missing any variables?
+Check variable classes
+Update classes as needed
+Rename variables according to data dictionary
+Recategorize open-ended variables d and f
+Reverse coded variable a, b, c
+Name new variables according to data dictionary
+Check reverse scoring
+Create sum and mean scores x, y, and z
+Name new variables according to data dictionary
+Add variable labels and value codes for all variables
+Run validation to check ranges of all variables
+:::
+
+## Data Sharing {.smaller}
+
+Funders are starting to require data sharing plans and there is a general movement toward [**Open Science**](https://osf.io/). @gilmorePracticalSolutionsSharing2018 share challenges to data sharing and some practical solutions.
+
+<br>IES suggests:
+
+- Focus on sharing well-organized and well-documented data
+- Commit to sharing some data or code to facilitate analysis
+- Don’t get stuck on one single way to share data
+- There may be times when sharing all of your data requires you to share with restricted access, while removing some variables and sharing only some of your data allows you to share the dataset openly.
+
+## Best Practices? 
+::::{.columns}
+:::{.column width=40%}
+<br><span style='color: red;'>**Establish a standard early and apply it to every project!**</span>
+
+<br>
+[Simple Guidelines for Effective Data Management](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/0012-9623-90.2.205)
+:::
+:::{.column width=60%}
+![](img/vigilance.jpg){.absolute right=0}
+:::
+::::
+## Useful Resources and :fire: Hot Tips :fire:
+
+- Start Early! [CITI Training](https://about.citiprogram.org/) 
+- [NCSU OIT Data Management Framework](https://oit.ncsu.edu/it-security/data-framework/)
+- [Qualtrics at NCSU](https://isa.ncsu.edu/surveys/qualtrics/accessing-qualtrics-at-nc-state/)
+- [Data Management in Large-Scale Education Research Modules](https://cghlewis.github.io/mpsi-data-training/index.html)
+- [Data Management in Large-Scale Education Research Text](https://datamgmtinedresearch.com/
 https://datascienceineducation.com)
-- NCSU Data Framework
 
 
+## Want to Learn More?
+
+<br>**Virtual Workshop:** <br><span style='color: #0456B4;'>_Establishing a Research Workflow: Tools and Tips for Generating High Impact Educational Research._</span>
+
+<br>
+**Date:** January 19, 2023
+
+**Time:** 12:00 PM 
+
+<br>Details soon in CED Grad Student Support Services email!
+
+## Get the slides {.smaller}
+
+<br>
+<br>
+[https://jennhouchins.github.io/ResearchDataManagement2022](https://jennhouchins.github.io/ResearchDataManagement2022)
 
 ## About this Presentation
 
 This presentation was created and delivered using:
 
-- R Studio
+- R Studio (:star: It's not just for statistical analyses! :star:)
  + Quarto Markdown
  + Revealjs Presentation Format
 - GitHub Pages
 
 ::: {.notes}
 
-Mermaid which is a JavaScript based diagramming and charting tool that renders Markdown-inspired text definitions to create and modify diagrams dynamically.
 :::
 
 ## References

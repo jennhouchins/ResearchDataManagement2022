@@ -1,0 +1,40 @@
+---
+title: "diagram"
+author: "Jennifer Houchins"
+date: "2022-10-19"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(DiagrammeR)
+```
+
+## Diagram
+
+```{r echo=FALSE}
+mermaid("
+flowchart LR
+    A((Idea)) --> B
+    
+subgraph B [Project Conception]
+   C(Grant Writing) --> D(Data Planning)
+end
+
+B --> E
+
+subgraph E [Data Management Lifecycle]
+F[(Data Collection)] --> G(Wrangle <br/>and<br/> Document)
+G --> H{Analysis}
+H --> F
+end
+
+E --> I 
+
+subgraph I [Project Wrap-up]
+J[test] ---> K[test2]
+end
+", height=300)
+```
+
